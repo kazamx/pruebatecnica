@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+// use App\Http\Controllers\DB;
 
 class PalabrasController extends Controller
 {
@@ -15,7 +17,10 @@ class PalabrasController extends Controller
      */
     public function __invoke(Request $request)
     {
-        
-        return view('palabras');
+        // $datos = DB::table('palabras')->where('sin_acentos','=','abada')->get();
+        $datos = DB::table('palabras')->where('palabra_id', 1)->get();
+        return ($datos);
+        // dd($datos);
+        // return view('palabras');
     }
 }

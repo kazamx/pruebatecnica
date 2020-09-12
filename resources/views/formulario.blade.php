@@ -24,25 +24,23 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body>
-        <h1>Ingresa las letras y la cantidad de letras de la palabra que necesitas</h1>
+        <h1>Ingresa las letras y la cantidad de letras de la palabra que necesites</h1>
       <form action={{ route('palabras') }} method="POST">
         @csrf
 
         <div class="form-group"> 
             <label class="control-label">Digite las letras para búsqueda</label>
             <input type="text" class="form-control" id="palabra" name="palabra" placeholder="Palabra">
-        </div>    
-    
+        </div>
+
         <div class="form-group"> 
             <label class="control-label">Digite la cantidad de letras</label>
             <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Cantidad">
-        </div>                    
+        </div>
 
         <div class="form-group"> <!-- Submit Button -->
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>     
-
     </form>
-
 </body>
 </html>
