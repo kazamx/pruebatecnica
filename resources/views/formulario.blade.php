@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body>
-    
+        <h1>Ingresa las letras y la cantidad de letras de la palabra que necesitas</h1>
       <form action={{ route('palabras') }} method="POST">
         @csrf
 
