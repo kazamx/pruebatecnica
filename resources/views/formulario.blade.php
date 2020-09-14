@@ -22,14 +22,15 @@
   <link rel="stylesheet" href="{{url('dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <title>Formulario</title>
 </head>
 <body>
-        <h1>Ingresa las letras y la cantidad de letras de la palabra que necesites</h1>
+        <h1>Ingresa las letras y la cantidad de letras que necesites</h1>
       <form action={{ route('palabras') }} method="POST">
         @csrf
 
         <div class="form-group"> 
-            <label class="control-label">Digite las letras para búsqueda</label>
+            <label class="control-label">Digite las letras para tu búsqueda</label>
             <input type="text" class="form-control" id="palabra" name="palabra" placeholder="Palabra">
         </div>
 

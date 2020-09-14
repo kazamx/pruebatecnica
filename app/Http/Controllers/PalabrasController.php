@@ -45,14 +45,12 @@ class PalabrasController extends Controller
                     }
                 }
             }
-
             if ($contador_igualdades === count($dato_array)) {
                 array_push($salida, $dato->sin_acentos);
             }
         }
 
         unset($salida[0]);
-
         $tiempo_fin = microtime(true);
         // $salida_json = new stdClass();
         // $salida_json->tiempo = $tiempo_fin - $tiempo_inicio;
